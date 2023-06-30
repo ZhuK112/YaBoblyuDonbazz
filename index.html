@@ -20,7 +20,6 @@
     <p class="num" style=" width: 164px; height: 23px; font-family: 'Ubuntu'; font-style: normal; font-weight: 400; font-size: 20px; line-height: 23px; position: relative; left: 1000px; bottom: 23px; color: #FFFFFF; font-size: 18px;">+38(091)744-09-84</p>
     <a href="#" class="booknow">Резервувати зараз</a>
     <img src="Фото/Phone.png" style="position: absolute; width: 23px; height: 23px; left: 980px; top: 30px;">
-</body>
 </html>
 </head>
 <header>
@@ -47,8 +46,58 @@
     <p style="position: relative; left: 680px; bottom: 412px; width: 246px; height: 96px; font-family: 'Ubuntu'; font-style: normal; font-weight: 400; font-size: 16px; line-height: 150%; text-align: center; color: #EDEDED; flex: none; order: 1; flex-grow: 0;">Світовий лідер у розробці та виробництві нанотехнологій для автомобільної, морської та аерокосмічної промисловості</p>
     <h3 style="position: relative; left: 1040px ; bottom: 650px; width: 322px; height: 63px; font-family: 'Ubuntu'; font-style: normal; font-weight: 700; font-size: 30px; line-height: 45px; text-transform: uppercase; color: #FFFFFF; flex: none; order: 0; flex-grow: 0;">Чому обирають нас</h3>
    <p style="position: relative; left: 1040px; bottom: 650px;width: 426px; height: 79px; font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 17px; line-height: 150%; color: #FFFFFF; flex: none; order: 1; flex-grow: 0;">Наша команда досвідчених техніків використовує лише найкращі матеріали та технології, щоб забезпечити ідеальне тонування вікон вашого автомобіля.</p>
+   <nav>
+    <ul id="menu">
+      <li><a href="#">Головна</a></li>
+      <li><a href="#">Про нас</a></li>
+      <li><a href="#">Послуги</a></li>
+      <li><a href="#">Контакти</a></li>
+    </ul>
+  </nav>  
+  <script>
+// Приклад додавання обробника подій для кліку на елемент навігації
+document.addEventListener("DOMContentLoaded", function() {
+  var menuItems = document.querySelectorAll("#menu li a");
+  for (var i = 0; i < menuItems.length; i++) {
+    menuItems[i].addEventListener("click", function(event) {
+      // Додатковий код для обробки події
+      event.preventDefault(); // Щоб заборонити перехід до посилання
+      console.log("Клікнуто на елемент навігації: " + this.textContent);
+    });
+  }
+});
+
+  </script>
 </header>
 <style>
+   nav {
+    position: fixed;
+  background-color: #f2f2f2;
+  top: 100px;
+}
+
+ul#menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul#menu li {
+  display: inline-block;
+}
+
+ul#menu li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+ul#menu li a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
     body{
         background-color: #272728;
     }
